@@ -3,16 +3,16 @@ Naudodami modulius sutvarkykite užduoties "Task 10" esančius failus taip, kad 
 -------------------------------------------------------------------------------------------- */
 
 
-import { composition } from './modules/math/composition.js';
-import { division } from './modules/math/division.js';
-import { multiplication } from './modules/math/multiplication.js';
-import { substraction } from './modules/math/subtraction.js';
+import {composition} from './modules/math/composition.js';
+import {division} from './modules/math/division.js';
+import {multiplication} from './modules/math/multiplication.js';
+import {substraction} from './modules/math/subtraction.js';
 
-import { one } from './modules/numbers/numbers.js';
-import { two } from './modules/numbers/numbers.js';
-import { three } from './modules/numbers/numbers.js';
-import { four } from './modules/numbers/numbers.js';
-import { five } from './modules/numbers/numbers.js';
+import {one} from './modules/numbers/numbers.js';
+import {two} from './modules/numbers/numbers.js';
+import {three} from './modules/numbers/numbers.js';
+import {four} from './modules/numbers/numbers.js';
+import {five} from './modules/numbers/numbers.js';
 
 
 let a = composition(one, four);
