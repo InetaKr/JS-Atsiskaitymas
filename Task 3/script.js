@@ -23,23 +23,19 @@ button.addEventListener('click', () => {
     .then(response => response.json())
     .then(data => {
         data.forEach(user => {
-            const userCard = document.createElement('div');
-            userCard.classList.add('user-card');
+            const VartotojoCard = document.createElement('div');
+            VartotojoCard.classList.add('vartotojo-card');
             
-            const avatar = document.createElement('img');
-            avatar.src = user.avatar_url;
-            avatar.alt = `${user.login}'s avatar`;
+            const VartotojoImage = document.createElement('img');
+            VartotojoImage.src = user.avatar_url;
+            VartotojoImage.alt = `${user.login}'s avatar`;
             
-            const loginLabel = document.createElement('p');
-            loginLabel.textContent = 'Login:';
+            const LoginoVardas = document.createElement('p');
+            LoginoVardas.textContent = `Login: ${user.login}`;
             
-            const login = document.createElement('p');
-            login.textContent = user.login;
-            
-            userCard.appendChild(avatar);
-            userCard.appendChild(loginLabel);
-            userCard.appendChild(login);
-            output.appendChild(userCard);
+            VartotojoCard.appendChild(VartotojoImage);
+            VartotojoCard.appendChild(LoginoVardas);
+            output.appendChild(VartotojoCard);
         });
     });
 });

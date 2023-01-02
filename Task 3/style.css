@@ -59,3 +59,33 @@
   border-radius: 5px;
   background-color: #fff;
 }
+
+#output{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  gap: 30px;
+  
+}
+
+.vartotojo-card{
+  display: flex;
+  flex-direction:column;
+  box-shadow: 5px 10px #888888;
+ 
+}
+.vartotojo-card > img{
+  height: 250px;
+  width: 300px;
+}
+
+.vartotojo-card > p{
+  display: inline;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+
+}
+
