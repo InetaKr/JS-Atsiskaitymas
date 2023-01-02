@@ -21,19 +21,19 @@ const users = [
 ];
 
 function getUserAverageAge(users) {
-  let totalAge = 0;
+  let VisuAmzius = 0;
   for (const user of users) {
-    totalAge += user.age;
+    VisuAmzius += user.age;
   }
-  return totalAge / users.length;
+  return VisuAmzius / users.length;
 }
 
 function getUsersNames(users) {
   return users.map(user => user.name);
 }
 
-const averageAge = getUserAverageAge(users);
-console.log(averageAge); 
+const AmziausVidurk = getUserAverageAge(users);
+console.log(AmziausVidurk); 
 
-const names = getUsersNames(users);
-console.log(names); 
+const Vardai = getUsersNames(users);
+console.log(Vardai); 
