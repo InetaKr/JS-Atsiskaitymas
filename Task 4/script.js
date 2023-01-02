@@ -13,24 +13,24 @@ const ENDPOINT = 'cars.json';
 fetch(ENDPOINT)
   .then(response => response.json())
   .then(data => {
-    data.forEach(manufacturer => {
-      const manufacturerCard = document.createElement('div');
-      manufacturerCard.classList.add('manufacturer-card');
+    data.forEach(Gamintojas => {
+      const GamintojoCard = document.createElement('div');
+      GamintojoCard.classList.add('Gamintojas-card');
 
-      const manufacturerName = document.createElement('h2');
-      manufacturerName.textContent = manufacturer.brand;
-      manufacturerCard.appendChild(manufacturerName);
+      const GamintojoVardas = document.createElement('h2');
+      GamintojoVardas.textContent = Gamintojas.brand;
+      GamintojoCard.appendChild(GamintojoVardas);
 
-      const modelsList = document.createElement('ul');
-      manufacturer.models.forEach(model => {
-        const modelItem = document.createElement('li');
-        modelItem.textContent = model;
-        modelsList.appendChild(modelItem);
+      const modeliuSarasas = document.createElement('ul');
+      Gamintojas.models.forEach(model => {
+        const modeliuSarasoLi = document.createElement('li');
+        modeliuSarasoLi.textContent = model;
+        modeliuSarasas.appendChild(modeliuSarasoLi);
       });
-      manufacturerCard.appendChild(modelsList);
+      GamintojoCard.appendChild(modeliuSarasas);
 
       const output = document.getElementById('output');
-      output.appendChild(manufacturerCard);
+      output.appendChild(GamintojoCard);
     });
   })
   .catch(error => {
