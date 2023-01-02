@@ -10,22 +10,22 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 ------------------------------------------------------------------- */
 
 
-function Convertor(weightKg) {
-    const weightLb = weightKg * 2.2046;
-    const weightGrams = weightKg / 0.0010000;
-    const weightOz = weightKg * 35.274;
+function Skaiciuokle(SvorisKilogramais) {
+    const SvorisSvarais = SvorisKilogramais * 2.2046;
+    const SvorisGramais = SvorisKilogramais / 0.0010000;
+    const SvorisUncijomis = SvorisKilogramais * 35.274;
   
-    document.querySelector("#Pound").textContent = weightLb;
-    document.querySelector("#Grams").textContent = weightGrams;
-    document.querySelector("#Ounces").textContent = weightOz;
+    document.querySelector("#Pound").textContent = SvorisSvarais;
+    document.querySelector("#Grams").textContent = SvorisGramais;
+    document.querySelector("#Ounces").textContent = SvorisUncijomis;
   }
   
   const input = document.querySelector("#Kilograms");
   const calculateButton = document.querySelector("#calculate-button");
   
   
-  calculateButton.addEventListener("click", () => {
-    event.preventDefault();
-    Convertor(input.value);
+  calculateButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    Skaiciuokle(input.value);
   });
   

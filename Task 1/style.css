@@ -11,7 +11,7 @@
 .wrapper {
   min-height: 100vh;
   min-width: calc(100vw - (100vw - 100%));
-  background-color: #fec631;
+  background-color: #bafe31;
 }
 
 .headline {
@@ -29,7 +29,7 @@ form {
   flex-wrap: wrap;
 }
 
-#search {
+#Kilograms {
   width: 65%;
   margin: 0;
   padding: 20px;
@@ -38,18 +38,24 @@ form {
   font-size: 1.1em;
 }
 
-#submit-btn {
+#calculate-button {
   width: 35%;
-  background-color: #f7f7f7;
+  background-color: #bab3b3;
   border: 0;
   outline: 0;
   font-size: 1.1em;
 }
 
-#submit-btn:hover {
+#calculate-button:hover {
   cursor: pointer;
   background-color: #000;
   color: #fff;
+}
+
+#output{
+  font-size: 30px;
+  margin-top:20px;
+
 }
 
 
@@ -60,8 +66,8 @@ form {
     font-size: 3.5em;
   }
 
-  #search,
-  #submit-btn {
+  #Kilograms,
+  #calculate-button {
     font-size: 2em;
   }
 }
